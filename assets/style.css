@@ -46,6 +46,7 @@ header button {
     border: none;
     background: none;
     width: fit-content;
+    cursor: pointer;
 }
 
 header nav.mobile {
@@ -85,6 +86,11 @@ margin-bottom: 4rem;
     line-height: 1.5rem;
     
 }
+
+header.desktop{
+    display: none;
+}
+
 
 main{
     max-width: 1110px;
@@ -201,37 +207,6 @@ color: var(--gunmetal);
 }
 
 @media (min-width:1110px) {
-    main{
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      gap: 1.75rem;
-
-    }
-    .primeira-seçao{
-
-        grid-column: 1 / 3;
-
-        display: grid;
-        grid-template-columns: 1fr 1fr ;
-        gap: 1.75rem;
-    }
-
-    .primeira-seçao picture{
-        grid-column: 1 / 3;
-    }
-
-    .primeira-seçao img{
-        margin: 0;
-
-    }
-
-    .primeira-seçao h1{
-        font-size: 3.5rem;
-    }
- 
-    .segunda-seçao h2 {
-        font-size: 2.5rem;
-    }
     
     
     header > button {
@@ -252,8 +227,64 @@ color: var(--gunmetal);
 
 
  }
+    header .desktop a:hover {
+    color: var(--vermillion);
 
+   }
 
+  
+
+   main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1.75rem;
+
+  }
+  .primeira-seçao{
+
+      grid-column: 1 / 3;
+
+      display: grid;
+      grid-template-columns: 1fr 1fr ;
+      gap: 1.75rem;
+  }
+
+  .primeira-seçao picture{
+      grid-column: 1 / 3;
+  }
+
+  .primeira-seçao img{
+      margin: 0;
+
+  }
+
+  .primeira-seçao h1{
+      font-size: 3.5rem;
+  }
+
+  .primeira-seçao button:hover {
+      background-color: var(--dark-blue);
+      cursor: pointer;
+  }
+
+  .segunda-seçao h2 {
+      font-size: 2.5rem;
+  }
+
+  .terceira-seçao{
+    display: flex;
+    grid-column: 1 / 4;
+   }
+
+   .terceira-seçao a {
+    text-decoration: none;
+   }
+
+   .terceira-seçao h2:hover {
+    color: var(--vermillion);
+   }
+   
+   
 }
 
     
