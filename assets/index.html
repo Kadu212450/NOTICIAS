@@ -12,14 +12,14 @@
     <script src="./script.js" defer></script>
 </head>
 <body >
-    <header class="header-mobile">
+    <header >
         <img src="./images/logo.svg" alt="Logo do site de noticías W.">
    
         <button>
             <img src="./images/icon-menu.svg" alt="ícone do menu hamburguer">
         </button>
 
-        <nav>
+        <nav class="mobile">
             <button>
                 <img src="./images/icon-menu-close.svg" alt="icone de x para fechar o menu">
             </button>
@@ -30,11 +30,25 @@
             <a href="#">Trending</a>
             <a href="#">Categoria</a>
         </nav>
+
+        <nav class="desktop">
+            <a href="#">Home</a>
+            <a href="#">Novo</a>
+            <a href="#">Popular</a>
+            <a href="#">Trending</a>
+            <a href="#">Categoria</a>
+
+        </nav>
+
     </header>
 
     <main>
-    <section class="primeira-seçao"> 
-    <img src="./images/image-web-3-mobile.jpg" alt="ícone de puzzle colorido">
+    <section class="primeira-seçao">
+        <picture>
+            <source media="(min-width: 700px)" srcset="./images/image-web-3-desktop.jpg">
+            <img src="./images/image-web-3-mobile.jpg" alt="ícone de puzzle colorido">
+        </picture>
+    
     <h1>O futuro brilhante da web 3.0?</h1>
     <p>Nós mergulhamos na próxima evolução da web que afirma devolver o poder das plataformas para as mãos das pessoas. Mas será que ela realmente está cumprindo sua promessa?</p>
     <button>Ler Mais</button>
@@ -58,17 +72,14 @@
 </section>
 
 <section class="terceira-seçao">
+<div>
+  <img src="./images/image-retro-pcs.jpg" alt="imagem de computadores antigos">
     <div>
-        <img src="./images/image-retro-pcs.jpg" alt="imagem de computadores antigos">
-
-    </div>
-
-    <div>
-        <strong>01</strong>
+     <strong>01</strong>
         <h2>Revivendo PCs antigos</h2>
         <p>E se PCs antigos pudessem receber peças modernas?</p>
     </div>
-
+</div>
     <div>
         <img src="./images/image-top-laptops.jpg" alt="imagem de laptop">
         <div>
